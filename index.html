@@ -1,163 +1,154 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Hi</title>
-		<meta charset="utf-8">
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="HandheldFriendly" content="true">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<style>
-		.trans-bg{
-		background-color: rgba(0,0,0,0.6);
-		}
-		.grad{
-		background-image: url(https://i.imgur.com/hbGXLre.jpg);
-		background-attachment: fixed;
-		}
-		.top{
-		text-align: center;
-		height: 100%;
-		width: 100%;
-		z-index: 1;
-		display: block;
-		}
-		.top2{
-		text-align: center;
-		height: 75%;
-		width: 100%;
-		z-index: 2;
-		display: block;
-		}
-		.trans-text{
-		background-color: rgba(255,255,255,0.75);
-		color: transparent;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-clip: text;
-		}
-		.format0{
-		font-size: 2em;
-		}
-		.format1{
-		font-size: 1.4em;
-		text-align: center;
-		}
-		.format2{
-		font-size: 2em;
-		text-align: left;
-		}
-		.fa{
-         padding: 20px;
-         font-size: 1.4em;
-         width: 50px;
-         text-align: center;
-         text-decoration: none;
-         }
-         .fa:hover {
-         opacity: 0.7;
-         }
-		</style>
-	</head>
-	<body>
-           <nav class="navbar navbar-dark shadow trans-bg fixed-top">
+        <style>
+            .cust2{
+            width: auto;
+            display: block;
+            position: relative;
+            margin-top: 5%;
+            }
+            .grad{
+            background-image: linear-gradient(to right, #ffff00, orange);
+            background: -webkit-linear-gradient(right, orange, #ffff00);
+            }
+            .centre_stuff{
+            text-align: center;
+            }
+            .para{
+            font-size: 1.4em;
+            text-align: center;
+            color: white;
+            }
+            .blk{
+            color: black;
+            }
+            h2{
+            font-size: 3em;
+            }
+            .fancy{
+            background-image: linear-gradient(to right, #ffff00, orange);
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            }
+            .fa {
+            padding: 20px;
+            font-size: 1.4em;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            }
+            .fa:hover {
+            opacity: 0.7;
+            }
+            .black{
+                background-color: #424242;
+            }
+            ul {
+                list-style: none;
+            }
+            ul li::before{
+                content: "\2192"; 
+                color: #ffff00;
+                font-weight: bold;
+                display: inline-block;
+                position: absolute;
+                width: 1em;
+                margin-left: -1em;
+                margin-top: 0.25em;
+            }
+        </style>
+    </head>
+    <body class="black">
+        <nav class="navbar navbar-light shadow grad fixed-top">
                     <div class="container-fluid">
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggler bg-dark" data-toggle="collapse" data-target="#Nav">
+                            <button type="button" class="navbar-toggler" style="background-color: Transparent; outline: none;" data-toggle="collapse" data-target="#Nav">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                         </div>
                             <div class="collapse navbar-collapse" id="Nav">
                             <ul class="nav navbar-nav">
                                 <li class="navbar-text">
-                                    <a style="color: white;" href="#abt">About</a>
+                                    <a style="color: black;" href="#abt">About</a>
                                 </li>
                                 <li class="navbar-text">
-                                    <a style="color: white;" href="#ach">Achievements</a>
+                                    <a style="color: black;" href="#ach">Achievements</a>
                                 </li>
                                 <li class="navbar-text">
-                                    <a style="color: white;" href="#cont">Contact</a>
+                                    <a style="color: black;" href="#cont">Contact</a>
                                 </li>
                             </ul>
                             </div>
                     </div>
-            </nav>
-                        <div class="top2 grad">
-                            <div class="top trans-bg">
-                            <br/><br/>
-                            <br/><br/>
-                            <img src="https://i.imgur.com/2VIL4X8.jpg" class="rounded-circle" height="150vw" width="150vw"><br>
-                            <h1 class="trans-text display-1">Hi</h1><br/><br/>
-                            <p class="trans-text font-weight-light format1">I'm Vishal and you're visiting my page. Feel free to browse :)</p><br><br>
-                            <p class="trans-text font-weight-light format1">Well, what are you waiting for? <b>Scroll down!</b></p><br><br>
-                        </div>
-                        </div><br/>
-		<div class="container">
-            <div class="row">
-                <div class="col">
-                <div class="card shadow-lg" id="abt">
-                <div class="card-header format2 bg-dark" style="color: white;">About</div>
-                <div class="card-body format1">
-                <p class="font-weight-light">I'm the laziest person ever. 
-                In fact, I'm so lazy I'm gonna leave this site unfinished. 
-                Just kidding, I'm your everyday, average teenager who just likes to code, game, 
-                look at memes and compose songs. FL Studio is my DAW of choice. I also dabble in TV
-                shows and anything that is trending.<br/><br/>
-                I'm mostly interested in front-end web development, but I am quite well-versed in 
-                backend development also. Apart from that, I'm also into Android (programming and 
-                otherwise :P) and Game Development. I know many mainstream languages like C, C++, R, 
-                MATLAB (mainly Image Processing) and Python. I intend on adding Kotlin and Java to 
-                this list pretty soon.</p></div>
+            </nav><br><br><br><br>
+        <div class="container shadow-lg" style="background-color: #212121; padding: 0;">
+            <br><br>
+            <div style="text-align:center;">
+            <img src="https://i.imgur.com/2VIL4X8.jpg" class="rounded-circle" height="150vw" width="150vw"></div><br>
+            <h1 class="display-1 font-weight-light fancy" align="center">Hi!</h1><br>
+            <p class="para font-weight-light">I'm Vishal and you're visiting my page. Feel free to browse :)</p><br><br>
+            <p class="para font-weight-light">Well, what are you waiting for? <b>Scroll down!</b></p><br><br>
+            
+            <header class="shadow" id="abt" style="padding: 1em;">
+                <h2 class="font-weight-light fancy">About</h2></header><br>
+            <div class="container">
+                <div class="row">
+                    <div class="column" style="padding: 1.2em;">
+                    <p class="para font-weight-light">I'm the <i>laziest</i> person ever. In fact, I'm so lazy I'm gonna leave this site unfinished. Just kidding, I'm your everyday, average teenager who just likes to code, game, look at memes and compose songs. FL Studio is my DAW of choice. I also dabble in TV shows and anything that is trending.</p><p class="para font-weight-light">I'm mostly interested in front-end web development, but I am quite well-versed in backend development also. Apart from that, I'm also into Android (programming and otherwise :P) and Game Development. I know many mainstream languages like C, C++, R, MATLAB (mainly Image Processing) and Python. I intend on adding Kotlin and Java to this list pretty soon.</p>
+                    </div>
                 </div>
-                </div>
-            </div>
-        </div>
-		<br/>
-		<div class="container">
-            <div class="row">
-                <div class="col">
-                <div class="card shadow-lg" id="ach">
-                <div class="card-header bg-dark format2" style="color: white;">Achievements</div>
-                <div class="card-body format1">
-                <p class="font-weight-light">A few feathers in my hat include:<br/></p>
-                    <ul>
-                        <li><p class="font-weight-light" style="text-align: left;">1st prize in AR/VR workshop held in VIT Chennai, hosted by MAGES Institute of Excellence</p></li>
-                        <li><p class="font-weight-light" style="text-align: left;">3 gold medals in Chess</p></li>
-                        <li><p class="font-weight-light" style="text-align: left;">Design team member of the VIT Chennai Android club</p></li>
-                        <li><p class="font-weight-light" style="text-align: left;">Fluent in Hindi, Tamil and English with sufficient knowledge in French and Sanskrit</p></li>
-                        <li><p class="font-weight-light" style="text-align: left;">Completed 4 grades in music theory and 3 grades of guitar practical examinations (Trinity College London)</p></li>
-                        <li><p class="font-weight-light" style="text-align: left;">Various certifcates in fields like Image Processing, Internet and Web Development, Game Designing (also participated in events like GameJam Titans, hosted by NASSCOM, Mindbox)</p></li>
-                    </ul>
-                </div>
-                </div>
+            </div><br>
+            
+            <header class="shadow" id="ach" style="padding: 1em;">
+                <h2 class="font-weight-light fancy">Achievements &amp Noteworthy Skills</h2></header><br>
+                <div class="container">
+                <div class="row">
+                    <div class="column" style="padding: 1.2em;">
+                            <p class="para font-weight-light">A few feathers in my hat include:</p><br>
+                            <ul>
+                                <li><p class="para font-weight-light" style="text-align: left; display: inline-block;">1st prize in AR/VR workshop held in VIT Chennai, hosted by MAGES Institute of Excellence</p></li>
+                                <li><p class="para font-weight-light" style="text-align: left; display: inline-block;">3 gold medals in Chess</p></li>
+                                <li><p class="para font-weight-light" style="text-align: left; display: inline-block;">Design team member of the VIT Chennai Android club</p></li>
+                                <li><p class="para font-weight-light" style="text-align: left; display: inline-block;">Fluent in Hindi, Tamil and English with sufficient knowledge in French and Sanskrit</p></li>
+                                <li><p class="para font-weight-light" style="text-align: left; display: inline-block;">Completed 4 grades in music theory and 3 grades of guitar practical examinations (Trinity College London)</p></li>
+                                <li><p class="para font-weight-light" style="text-align: left; display: inline-block;">Various certifcates in fields like Image Processing, Internet and Web Development, Game Designing (also participated in events like GameJam Titans, hosted by NASSCOM, Mindbox)</p></li>
+                            </ul>
+                            <p class="para font-weight-light">
+                            I aim to greatly expand this list in the near future.
+                            </p>
+                    </div>
                 </div>
             </div>
-        </div>
-		<br/>
-		<div class="container">
-            <div class="row">
-                <div class="col">
-                <div class="card shadow-lg" id="cont">
-                <div class="card-header bg-dark format2" style="color: white;">Contact</div>
-                <div class="card-body format1">
-                <p class="font-weight-light">Well, looks like this is the end of my tiny page, but you can talk to me and get to know me better using any of the following:<br><br>
-                    <a href="https://www.facebook.com/ekat99" class="fa fa-facebook"></a>
-                    <a href="https://www.linkedin.com/vishal-kumar-91236a154" class="fa fa-linkedin"></a>
-                    <a href="https://www.instagram.com/man1aq" class="fa fa-instagram"></a>
-                    <a href="https://www.reddit.com/user/MaN1aQ" class="fa fa-reddit"></a>
-                    <a href="https://www.youtube.com/channel/UCiRztkBiAFZKl85UB8AObzw?view_as=subscriber" class="fa fa-youtube"></a>
-                    <br><br>
-                    Alternately, feel free to email me anything, anytime - <a href="mailto:vishal.s.kumar99@gmail.com">vishal.s.kumar99@gmail.com</a><br>
-                    Thanks for the visit!<br>
-                    <a href="#top">Back to top</a><br></p>
-                </div>
-                </div>
+            
+            <header class="shadow" id="cont" style="padding: 1em;">
+                <h2 class="font-weight-light fancy">Contact me!</h2></header><br>
+                <div class="container">
+                <div class="row">
+                    <div class="column" style="padding: 1.2em;">
+                        <p class="para font-weight-light">
+                        Well, looks like this is the end of my tiny page, but you can talk to me and get to know me better using any of the following:<br><br>
+                        <a href="https://www.facebook.com/ekat99" class="fa fa-facebook"></a>
+                        <a href="https://www.linkedin.com/in/vishal-kumar-91236a154/" class="fa fa-linkedin"></a>
+                        <a href="https://www.instagram.com/man1aq" class="fa fa-instagram"></a>
+                        <a href="https://www.youtube.com/channel/UCiRztkBiAFZKl85UB8AObzw?view_as=subscriber" class="fa fa-youtube"></a>
+                        <br><br>
+                        Alternately, feel free to email me anything, anytime - <a href="mailto:vishal.s.kumar99@gmail.com">vishal.s.kumar99@gmail.com</a><br>
+                        Thanks for the visit!<br>
+                        <a href="#top">Back to top</a><br></p>
+                    </div>
                 </div>
             </div>
-        </div>
-		<br/><br/>
-	<div style='text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;display:block !important;'><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_medium=website&amp;utm_content=footer_img"><img src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"  alt="www.000webhost.com"></a></div></body>
+        <br><br></div><br><br>
+        <p style="color: white; font-size: 10px; text-align: center;">Made with Bootstrap</p><br><br>
+    </body>
 </html>
