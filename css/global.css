@@ -6,12 +6,20 @@
 *{
     font-family: Product Sans;
     font-size: 1em;
+    scroll-behavior: smooth;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: black;
+    color: white;
 }
 .intro{
     height: 100%;
     width: 100%;
     position: relative;
-    background-color: rgb(20, 20, 20);
+    background-color: hsl(14, 100%, 50%);
     text-align: center;
 } 
 .slogan{
@@ -22,23 +30,25 @@
     height: 100%;
 }
 .intro-heading{
-    color: hsl(219, 100%, 50%);
+    color: rgb(0, 0, 0);
+}
+.bold-accent {
+    color: hsl(14, 100%, 50%);
+    font-weight: bold;
 }
 .nicebg{
-    background-color: hsl(219, 100%, 50%);
+    background-color: hsl(14, 100%, 50%);
     width: 100%;
     padding: 3%;
 }
 .chead{
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
     padding-left: 5%;
 }
 .hidden{
     opacity: 0;
 }
 .nicebg2{
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(0, 0, 0);
     width: 100%;
     padding: 3%;
 }
@@ -49,16 +59,16 @@
     padding-top: 5%;
 }
 .card{
-    border-radius: 30px;
     min-height: 50%;
     border: 0px;
     margin: 3%;
 }
-.card:hover{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.7), 0 6px 20px 0 rgba(0,0,0,0.69);
+.padded-heading{
+    padding: 3%;
 }
 .padded{
     padding: 3%;
+    background-color: rgb(20, 20, 20);
 }
 a{
     color: white;
