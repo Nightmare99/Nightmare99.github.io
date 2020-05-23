@@ -63,10 +63,34 @@ body {
     border: 0px;
     margin: 3%;
 }
+.maxed{
+    height: 100%;
+    width: 100%;
+}
+.row > .col-xs-12 {
+    display:flex;
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.flex-nowrap {
+    -webkit-flex-wrap: nowrap!important;
+    -ms-flex-wrap: nowrap!important;
+    flex-wrap: nowrap!important;
+}
+.flex-row {
+    display:flex;
+    -webkit-box-orient: horizontal!important;
+    -webkit-box-direction: normal!important;
+    -webkit-flex-direction: row!important;
+    -ms-flex-direction: row!important;
+    flex-direction: row!important;
+}
 .padded-heading{
     padding: 3%;
 }
 .padded{
+    height: 100%;
     padding: 3%;
     background-color: rgb(20, 20, 20);
 }
@@ -82,4 +106,23 @@ a:hover{
 }
 .para{
     font-size: 1.2em;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #000000; 
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: hsl(14, 100%, 50%); 
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(14, 100%, 40%); 
 }
