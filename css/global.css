@@ -15,7 +15,34 @@ body {
     background-color: black;
     color: white;
 }
+@keyframes backgroundColorPalette {
+	0% {
+		background:  hsl(14, 100%, 50%);
+    }
+	50% {
+		background: #00B315;
+	}
+	100% {
+		background: #00c3ff;
+	}
+}
+@keyframes colorPalette {
+	0% {
+		color:  hsl(14, 100%, 50%);
+    }
+	50% {
+		color: #00B315;
+	}
+	100% {
+		color: #00c3ff;
+	}
+}
 .intro{
+    animation-name: backgroundColorPalette;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
     height: 100%;
     width: 100%;
     position: relative;
@@ -34,10 +61,20 @@ body {
 }
 .bold-accent {
     color: hsl(14, 100%, 50%);
+    animation-name: colorPalette;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
     font-weight: bold;
 }
 .nicebg{
     background-color: hsl(14, 100%, 50%);
+    animation-name: backgroundColorPalette;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
     width: 100%;
     padding: 3%;
 }
@@ -120,10 +157,10 @@ a:hover{
    
   /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: hsl(14, 100%, 50%); 
+    background: hsl(0, 0%, 83%); 
 }
   
   /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: hsl(14, 100%, 40%); 
+    background: hsl(0, 0%, 59%); 
 }
