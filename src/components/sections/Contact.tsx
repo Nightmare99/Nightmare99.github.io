@@ -178,7 +178,7 @@ export function Contact() {
         transition={{ duration: 0.8 }}
         className="text-center mt-16 text-gray-500 text-sm"
       >
-        <p>© 2025 Vishal Kumar. Built with React, TypeScript, and Tailwind CSS.</p>
+        <p>© 2025 Vishal Kumar</p>
       </motion.footer>
     </section>
   )
