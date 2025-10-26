@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Wave2 } from "@/components/ui/wave"
+import { Wave } from "@/components/ui/wave"
 import { getSkills } from "@/services/portfolioService"
 import { getIcon } from "@/lib/iconMap"
 import type { SkillCategory as SkillCategoryType } from "@/types/portfolio"
@@ -90,7 +90,7 @@ export function Skills() {
 
   return (
     <section id="skills" className="relative pt-0 pb-0 bg-gradient-to-b from-zinc-900 via-zinc-950 to-black overflow-x-hidden" style={{ isolation: 'isolate' }}>
-      <Wave2 fill="rgb(9, 9, 11)" className="absolute -top-1 left-0 w-full z-20" />
+      <Wave fill="#000000" className="absolute -top-1 left-0 w-full z-20" />
       
       <div className="container mx-auto px-4 relative z-10 pt-20 pb-20">
         <motion.div
