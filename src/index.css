@@ -126,6 +126,41 @@ section {
   animation: gradient-flow 8s linear infinite;
 }
 
+/* Aurora Borealis animations */
+@keyframes aurora {
+  0%, 100% {
+    opacity: 0.3;
+    transform: translateY(0) scaleY(1);
+  }
+  33% {
+    opacity: 0.5;
+    transform: translateY(-10px) scaleY(1.05);
+  }
+  66% {
+    opacity: 0.4;
+    transform: translateY(5px) scaleY(0.95);
+  }
+}
+
+@keyframes aurora-slow {
+  0%, 100% {
+    opacity: 0.2;
+    transform: translateY(0) scaleY(1) translateX(0);
+  }
+  50% {
+    opacity: 0.4;
+    transform: translateY(-15px) scaleY(1.08) translateX(20px);
+  }
+}
+
+.animate-aurora {
+  animation: aurora 12s ease-in-out infinite;
+}
+
+.animate-aurora-slow {
+  animation: aurora-slow 18s ease-in-out infinite;
+}
+
 /* Bubble/Blob animations */
 @keyframes blob {
   0%, 100% {

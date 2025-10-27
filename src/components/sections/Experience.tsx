@@ -73,10 +73,14 @@ export function Experience() {
   }, [])
 
   return (
-    <section id="experience" className="relative pt-0 pb-0 bg-gradient-to-b from-zinc-900 to-zinc-950 overflow-x-clip" style={{ isolation: 'isolate' }}>
-      <Wave fill="rgb(0, 0, 0)" className="absolute -top-1 left-0 w-full z-20" />
+    <section id="experience" className="relative pt-0 pb-0 overflow-x-clip" style={{ isolation: 'isolate' }}>
+      {/* Static gradient background matching Hero */}
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-gradient-to-l from-purple-950/30 via-purple-950/10 to-black"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-zinc-900/50 to-zinc-950"></div>
+      </div>
       
-      <div className="container mx-auto px-4 relative z-10 pt-20 pb-20">
+      <div className="container mx-auto px-4 relative z-10 pt-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
